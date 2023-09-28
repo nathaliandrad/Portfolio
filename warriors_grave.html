@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+<script>
+  if (window.location.pathname.endsWith(".html")) {
+    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+  }
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia | Warrior's Grave </title>
@@ -50,14 +56,11 @@
                         <div class="col-xl-9 col-lg-10">
 							<div class="main-menu black-menu menu-bg-white d-none d-lg-block">
                                 <ul id="navigation">
-                                    <li><a href="index.html" id="navText">Home</a></li>
+                                    <li><a href="home.html" id="navText">Home</a></li>
                                     <li><a href="about.html" id="navText">About</a></li>
-                                    <!-- <li><a href="services.html">Services</a></li> -->
                                     <li><a href="project.html" id="navText">Projects</a></li>
-                             
                                     <li><a href="contact.html" id="navText">Contact</a></li>
                                 </ul>
-						
 							</div>
 						</div>
                         <!-- Mobile Menu -->
@@ -79,13 +82,10 @@
             <div class="container">
                 <div class="row">
                     <video playsinline loop muted autoplay style="width: 100%;height: 100%; position: absolute;top:0;left:0;z-index: 5;object-fit: cover;    opacity: 0.3;"><source src="assets/videos/Warrior_Grave_Banner_Video.mp4" type="video/mp4"></video>
-                   
                     <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8" style="position: relative; z-index: 20;">
                         <div class="slide-full-content">
                             <span>Role-playing Game </span>
                             <h1>Warrior's Grave</h1>
-                           
-                           
                         </div>
                     </div>
                 </div>
@@ -95,26 +95,19 @@
             <div class="container">
                 <div class="row">
                     <video playsinline loop muted autoplay style="width: 100%;height: 100%; position: absolute;top:0;left:0;z-index: 5;object-fit: cover;    opacity: 0.3;"><source src="assets/videos/Warrior_2_Banner_Video.mp4" type="video/mp4"></video>
-                 
                     <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8" style="position: relative; z-index: 20;">
                         <div class="slide-full-content">
                             <span>RPG Game </span>
                             <h1>Warrior's Grave</h1>
-                           
-                           
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-   
     </div>
 </div>
 <!-- slider-area end -->
-
-
         <!-- Hero End -->
-        
         <!--? Team Start -->
         <div class="team-area section-padding30" style="padding-top:60px;">
             <div class="container" >
@@ -145,11 +138,7 @@
                          
                         </div>
                     </div> 
-                
-
-
                 </div>
-
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
@@ -165,22 +154,12 @@
                         <h2><b id="boldText">Project Brief:</b> Tasked with the development of a dynamic game featuring an extensive array of character animations</h2>
                         <h2><b id="boldText">Role:</b> Unity Developer</h2>
                         <h2><b id="boldText">Platform: </b>PC, Mac and Web</h2><br>
-
-                        
-
-                        <!-- <h2>Created unique animations for each object in the room.</h2> -->
-
-
-                    </div>
-                  
-               
+                    </div>  
                 </div>   
-
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">My Contributions</span>
-                            <!--<h2>PROBLEMS ENCOUNTERED</h2>-->
                         </div>
                     </div>
                 </div>
@@ -192,15 +171,12 @@
                         <h2>• Skillfully integrated visually captivating effects and immersive sound effects</h2>
                         <h2>• Designed and implemented user interface (UI) elements for the game's graphical user interface (GUI)</h2><br>
                     </div>
-                  
-               
                 </div> 
 
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">Gameplay Video</span>
-                            <!--<h2>We provide best intorior solution for you</h2>-->
                         </div>
                     </div>
                 </div>
@@ -216,22 +192,17 @@
                     border: none;"></iframe>
                     
                 </div>
-
-
                 <!-- SOURCE CODE SECTION-->
                 <div class="row d-flex justify-content-center" style="margin-top: 80px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">Source Code</span>
-                            <!--<h2>PROBLEMS ENCOUNTERED</h2>-->
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="specifications">
-                        
                         <a href="https://github.com/nathaliandrad/Graves_Warrior" target="_blank" rel="noopener noreferrer"><h1><b id="sourceCodeText">Warrior's Grave | GitHub</b></h1>
-                            
                         </a>
                     </div>
 
@@ -241,7 +212,6 @@
         </div>
         <div class="backToProject">
             <a href="project.html"><h3 id="backProjects" style="text-align: center; margin-bottom: 10px;font-size: 1.5em;"> ↵ Back to Projects</h3></a>
-
         </div>
         <!-- Team End -->
     </main>
@@ -258,9 +228,7 @@
                                 <!-- social -->
                                 <div class="footer-social">
                                     <a href="https://github.com/nathaliandrad" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-
                                     <a href="https://www.linkedin.com/in/nathaliandrad/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-                                    <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                                     <a href="mailto:nathaliandrad@gmail.com"><i class="fas fa-envelope-square"></i></a>
                                 </div>
                             </div>
