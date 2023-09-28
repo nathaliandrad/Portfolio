@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+<script>
+  if (window.location.pathname.endsWith(".html")) {
+    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+  }
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia | Hell Dimension </title>
@@ -50,14 +56,13 @@
                         <div class="col-xl-9 col-lg-10">
 							<div class="main-menu black-menu menu-bg-white d-none d-lg-block">
                                 <ul id="navigation">
-                                    <li><a href="index.html" id="navText">Home</a></li>
+                                    <li><a href="home.html" id="navText">Home</a></li>
                                     <li><a href="about.html" id="navText">About</a></li>
                                     <!-- <li><a href="services.html">Services</a></li> -->
                                     <li><a href="project.html" id="navText">Projects</a></li>
                 
                                     <li><a href="contact.html" id="navText">Contact</a></li>
                                 </ul>
-						
 							</div>
 						</div>
                         <!-- Mobile Menu -->
@@ -79,13 +84,10 @@
             <div class="container">
                 <div class="row">
                     <video playsinline loop muted autoplay style="width: 100%;height: 100%; position: absolute;top:0;left:0;z-index: 5;object-fit: cover;    opacity: 0.4;"><source src="assets/videos/HellDimension_Banner.mp4" type="video/mp4"></video>
-              
                     <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8"  style="position: relative; z-index: 20;">
                         <div class="slide-full-content">
                             <span>2D Shooting Game</span>
                             <h1>Hell Dimension</h1>
-                           
-                           
                         </div>
                     </div>
                 </div>
@@ -127,16 +129,12 @@
                            
                         </div>
                     </div> 
-                
-
-
                 </div>
 
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">Project Specification</span>
-                            <!--<h2>We provide best intorior solution for you</h2>-->
                         </div>
                     </div>
                 </div>
@@ -147,14 +145,8 @@
                         <h2><b id="boldText">Project Brief:</b> Developed a Windows-based game featuring animations and 2D sprite rendering</h2>
                         <h2><b id="boldText">Role: </b>Game Programmer</h2>
                         <h2><b id="boldText">Platform:</b> PC</h2><br>
-
-
-
                     </div>
-                  
-               
                 </div>   
-
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
@@ -172,8 +164,6 @@
                         <h2>• Integrated sound effects (SFX) and music</h2>
                         <h2>• Introduced user interfaces for health and score tracking</h2><br>
                     </div>
-                  
-               
                 </div> 
 
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
@@ -208,13 +198,8 @@
                 </div>
                 <div class="row">
                     <div class="specifications">
-                        
                         <a href="https://github.com/nathaliandrad/hell_dimension_game" target="_blank" rel="noopener noreferrer"><h1><b id="sourceCodeText">Hell Dimension | GitHub</b></h1>
-                            
                         </a>
-                     
-
-
                     </div>
 
                 </div> 
@@ -232,11 +217,9 @@
         <!-- Footer Start-->
         <div class="footer-area footer-padding section-bg" data-background="assets/img/gallery/footer_bg.jpg">
             <div class="container">
-                
                 <!-- Footer bottom -->
                 <div class="footer-bottom">
                     <div class="row"    style=" justify-content: center;">
-         
                             <div class="footer-copy-right f-right">
                                 <!-- social -->
                                 <div class="footer-social">
