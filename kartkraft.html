@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+<script>
+  if (window.location.pathname.endsWith(".html")) {
+    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+  }
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia | KartKraft </title>
@@ -69,25 +75,24 @@
     </header>
     <!-- header end -->
     <main>
-       
-
-
 <!--? slider-area start -->
 <div class="slider-area">
-    <div class="slide-full slider-height d-flex align-items-center" style="background-image: url(assets/img/black.png);">
-            <div class="container">
+    <div class="slider-full-active owl-carousel custom-dots">
+        <div class="slide-full slider-height d-flex align-items-center" style="background-image: url(assets/img/black.png);">
+           <div class="container">
                 <div class="row">
-                    <video playsinline loop muted autoplay style="width: 100%;height: 100%; position: absolute;top:0;left:0;z-index: 5;object-fit: cover;    opacity: 0.4;"><source src="assets/videos/kartkraft-small1.mp4" type="video/mp4"></video>
-                    <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8"  style="position: relative; z-index: 20;">
+                    <video playsinline loop muted autoplay style="width: 100%;height: 100%; position: absolute;top:0;left:0;z-index: 5;object-fit: cover;    opacity: 0.3;"><source src="assets/videos/kartkraft-small1.mp4" type="video/mp4"></video>
+                 
+                    <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8" style="position: relative; z-index: 20;">
                         <div class="slide-full-content">
-                            <span style="color: white;">Karting Racing Simulator | Game</span>
+                            <span>Karting Racing Simulator | Game</span>
                             <h1>KartKraft</h1>
-                    
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </div>
 </div>
 <!-- slider-area end -->
