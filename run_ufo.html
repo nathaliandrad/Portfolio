@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+<script>
+  if (window.location.pathname.endsWith(".html")) {
+    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+  }
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia | Run UFO </title>
@@ -49,9 +55,8 @@
                         <div class="col-xl-9 col-lg-10">
 							<div class="main-menu black-menu menu-bg-white d-none d-lg-block">
                                 <ul id="navigation">
-                                    <li><a href="index.html" id="navText">Home</a></li>
+                                    <li><a href="home.html" id="navText">Home</a></li>
                                     <li><a href="about.html" id="navText">About</a></li>
-                                    <!-- <li><a href="services.html">Services</a></li> -->
                                     <li><a href="project.html" id="navText">Projects</a></li>
                                   
                                     <li><a href="contact.html" navText">Contact</a></li>
@@ -71,7 +76,6 @@
     </header>
     <!-- header end -->
     <main>
-
 <!--? slider-area start -->
 <div class="slider-area">
     <div class="slider-full-active owl-carousel custom-dots">
@@ -84,8 +88,6 @@
                         <div class="slide-full-content">
                             <span>2D Top-Down Game</span>
                             <h1>Run UFO</h1>
-                           
-                           
                         </div>
                     </div>
                 </div>
@@ -95,15 +97,12 @@
     </div>
 </div>
 <!-- slider-area end -->
-
-
         <!-- Hero End -->
         
         <!--? Team Start -->
         <div class="team-area section-padding30" style="padding-top:60px;">
             <div class="container" >
                 <div class="row" >
-
                     <!-- single Tem -->
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
@@ -129,52 +128,28 @@
                           
                         </div>
                     </div> 
-                
-
-
                 </div>
-
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">Project Specification</span>
-                            <!--<h2>We provide best intorior solution for you</h2>-->
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="specifications">
-                        <!--
-
-
-
-Project Brief: Create a game from the '2D UFO' Unity tutorial
-Role: Unity Developer
-Platform: PC, Mac and Web
-                        -->
                         <h2>Run UFO is a concise game comprising five distinct levels. 
                             The primary objective is to collect all the coins within each scene to progress to the next level, all while navigating to avoid collisions with adversaries.</h2><br>
                         <h2><b id="boldText">Project Brief:</b> Developed a game based on the '2D UFO' Unity tutorial</h2>
                         <h2><b id="boldText">Role:</b> Unity Developer</h2>
                         <h2><b id="boldText">Platform:</b> PC, Mac and Web</h2><br>
-
                         <a href="https://www.youtube.com/watch?v=jTtCsOjNwJQ&t=155s" target="_blank" rel="noopener noreferrer"><h1 style="color:#607dfc;">Tutorial Reference</h1></a>
-
-                        
-
-                        <!-- <h2>Created unique animations for each object in the room.</h2> -->
-
-
                     </div>
-                  
-               
                 </div>   
-
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">My Contributions</span>
-                            <!--<h2>PROBLEMS ENCOUNTERED</h2>-->
                         </div>
                     </div>
                 </div>
@@ -184,18 +159,12 @@ Platform: PC, Mac and Web
                         <h2>• Incorporated text elements and introduced new audio assets</h2>
                         <h2>• Engineered dynamic particle systems to enhance the background aesthetics</h2>
                         <h2>• Crafted an entirely new level layout and design</h2><br>
-
-
                     </div>
-                  
-               
                 </div> 
-
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">Gameplay Video</span>
-                            <!--<h2>We provide best intorior solution for you</h2>-->
                         </div>
                     </div>
                 </div>
@@ -209,7 +178,6 @@ Platform: PC, Mac and Web
                     width: 100%;
                     height: 100%;
                     border: none;"></iframe>
-                    
                 </div>
 
                       <!-- SOURCE CODE SECTION-->
@@ -223,24 +191,16 @@ Platform: PC, Mac and Web
                     </div>
                     <div class="row">
                         <div class="specifications">
-                            
                             <a href="https://github.com/nathaliandrad/Run_UFO" target="_blank" rel="noopener noreferrer"><h1><b id="sourceCodeText">Run UFO | GitHub</b></h1>
-                                
                             </a>
-                         
-    
-    
                         </div>
     
                     </div> 
-            
             </div>
         </div>
         <div class="backToProject">
             <a href="project.html"><h3 id="backProjects" style="text-align: center; margin-bottom: 10px;font-size: 1.5em;"> ↵ Back to Projects</h3></a>
-        
         </div>
-
         <!-- Team End -->
     </main>
     <footer>
