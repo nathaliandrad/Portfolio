@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+<script>
+  if (window.location.pathname.endsWith(".html")) {
+    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+  }
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia | IndyCar </title>
@@ -47,7 +53,7 @@
                         <div class="col-xl-9 col-lg-10">
 							<div class="main-menu black-menu menu-bg-white d-none d-lg-block">
                                 <ul id="navigation">
-                                    <li><a href="index.html" id="navText">Home</a></li>
+                                    <li><a href="home.html" id="navText">Home</a></li>
                                     <li><a href="about.html" id="navText">About</a></li>
                                     <!-- <li><a href="services.html">Services</a></li> -->
                                     <li><a href="project.html" id="navText">Projects</a></li>
@@ -69,9 +75,6 @@
     </header>
     <!-- header end -->
     <main>
-       
-
-
 <!--? slider-area start -->
 <div class="slider-area">
     <div class="slider-full-active owl-carousel custom-dots">
@@ -81,12 +84,6 @@
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;">
-        <!-- <div class="slide-full d-flex slider-height align-items-center" style="min-height:100%;
-        background:linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(assets/img/projects/ColorgizeVR/new.gif);
-        height: 1000px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;"> -->
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8">
@@ -102,8 +99,6 @@
     </div>
 </div>
 <!-- slider-area end -->
-
-
         <!-- Hero End -->
         
         <!--? Team Start -->
@@ -137,9 +132,6 @@
               
                         </div>
                     </div> 
-                
-
-
                 </div>
 <!-- SPECIFICATION SECTION-->
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
@@ -174,16 +166,6 @@
                 </div>
                 <div class="row">
                     <div class="specifications">
-                        <!--
-
-Assumed Leadership for Game Modes, Game States, and Player States:
-I took on a central role in overseeing and optimizing game modes, game states, and player states, ensuring a seamless and bug-free game flow.
-Streamlined Game Flow and Enhanced Communication:
-Proficiently utilized C++ and Lua within the powerful Unreal Engine 4 framework to streamline game mechanics and improve player experiences.
-Demonstrated exceptional problem-solving skills by identifying and rectifying issues across diverse areas, including UI, sound, and networking.
-Spearheaded the development of an efficient game mode and player state management system, empowering designers to effortlessly implement new functions into the game's framework.
-Assumed full responsibility for pivotal gameplay-related tasks, including managing online player interactions (joining, leaving, rejoining sessions) and refining the game's user interface, among other critical responsibilities.
-                        -->
                         <h2>- Assumed Leadership for Game Modes, Game States, and Player States:<br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• I took on a central role in overseeing and optimizing game modes, game states, and player states, ensuring a seamless and bug-free game flow.</h2>
                         <h2>- Streamlined Game Flow and Enhanced Communication:<br>
@@ -194,8 +176,6 @@ Assumed full responsibility for pivotal gameplay-related tasks, including managi
                         </h2><br>
 
                     </div>
-                  
-               
                 </div> 
 
             </div>
