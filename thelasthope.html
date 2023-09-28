@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+<script>
+  if (window.location.pathname.endsWith(".html")) {
+    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+  }
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia | The Last Hope </title>
@@ -50,11 +56,9 @@
                         <div class="col-xl-9 col-lg-10">
 							<div class="main-menu black-menu menu-bg-white d-none d-lg-block">
                                 <ul id="navigation">
-                                    <li><a href="index.html" id="navText">Home</a></li>
+                                    <li><a href="home.html" id="navText">Home</a></li>
                                     <li><a href="about.html" id="navText">About</a></li>
-                                    <!-- <li><a href="services.html">Services</a></li> -->
                                     <li><a href="project.html" id="navText">Projects</a></li>
-                            
                                     <li><a href="contact.html" id="navText">Contact</a></li>
                                 </ul>
 							
@@ -72,9 +76,6 @@
     </header>
     <!-- header end -->
     <main>
-
-
-
 <!--? slider-area start -->
 <div class="slider-area">
     <div class="slider-full-active owl-carousel custom-dots">
@@ -82,13 +83,10 @@
            <div class="container">
                 <div class="row">
                     <video playsinline loop muted autoplay style="width: 100%;height: 100%; position: absolute;top:0;left:0;z-index: 5;object-fit: cover;    opacity: 0.3;"><source src="assets/videos/TheLastHope_BannerVideo.mp4" type="video/mp4"></video>
-                 
                     <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8" style="position: relative; z-index: 20;">
                         <div class="slide-full-content">
                             <span>Shootem Up Game</span>
                             <h1>The Last Hope</h1>
-                           
-                           
                         </div>
                     </div>
                 </div>
@@ -98,10 +96,7 @@
     </div>
 </div>
 <!-- slider-area end -->
-
-
         <!-- Hero End -->
-        
         <!--? Team Start -->
         <div class="team-area section-padding30" style="padding-top:60px;">
             <div class="container" >
@@ -132,16 +127,11 @@
                         
                         </div>
                     </div> 
-                
-
-
                 </div>
-
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">Project Specification</span>
-                            <!--<h2>We provide best intorior solution for you</h2>-->
                         </div>
                     </div>
                 </div>
@@ -154,13 +144,8 @@
                         <h2><b id="boldText">Platform: </b>PC, Mac and Web</h2><br>
                         <p>
                         </p>
-
-
                     </div>
-                  
-               
                 </div>   
-
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
@@ -176,11 +161,7 @@
                         <h2>• Designed various waves of enemies, each endowed with distinct attack patterns, stamina levels, and health parameters</h2>
                         <h2>• Crafted expansive game environments, with the first level boasting a runtime of up to 6 minutes</h2>
                         <h2>• Enriched the gaming experience with meticulously chosen sound effects and visual effects, aligning seamlessly with the game's genre</h2><br>
-
-
                     </div>
-                  
-               
                 </div> 
 
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
@@ -209,27 +190,19 @@
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">Source Code</span>
-                            <!--<h2>PROBLEMS ENCOUNTERED</h2>-->
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="specifications">
-                        
                         <a href="https://github.com/nathaliandrad/The_Last_Hope" target="_blank" rel="noopener noreferrer"><h1><b  id="sourceCodeText">The Last Hope | GitHub</b></h1>
-                            
                         </a>
-                     
-
-
                     </div>
-
                 </div> 
             </div>        
         </div>
         <div class="backToProject">
             <a href="project.html"><h3 id="backProjects" style="text-align: center; margin-bottom: 10px;font-size: 1.5em;"> ↵ Back to Projects</h3></a>
-        
         </div>
        
         <!-- Team End -->
@@ -314,21 +287,16 @@
         #sourceCodeText:hover{
             color:rgb(59, 86, 160);
         }
-
         #navigation{
             text-align: end;
         }
-
         #navText:hover{
             color:#4025D1;
             /* font-size: 17px; */
         }
-
-
         #backProjects:hover{
             color:#4025D1;
         }
-
         #MySectionTitle{
             font-size: 25px;
         }
