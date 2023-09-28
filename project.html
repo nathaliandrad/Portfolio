@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+<script>
+  if (window.location.pathname.endsWith(".html")) {
+    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+  }
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia | Projects </title>
@@ -48,7 +54,7 @@
                         <div class="col-xl-9 col-lg-10">
 							<div class="main-menu black-menu menu-bg-white d-none d-lg-block">
                                 <ul id="navigation">
-                                    <li><a href="index.html" id="navText">Home</a></li>
+                                    <li><a href="home.html" id="navText">Home</a></li>
                                     <li><a href="about.html" id="navText">About</a></li>
                                     <!-- <li><a href="services.html">Services</a></li> -->
                                     <li><a href="project.html" id="navText" style="font-size: 17px; color:#607dfc;">Projects</a></li>
