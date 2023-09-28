@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+	<script>
+	  if (window.location.pathname.endsWith(".html")) {
+	    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+	    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+	  }
+        </script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia Andrade | Programmer</title>
@@ -12,7 +18,6 @@
     <link rel="preload" href="assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css"></noscript>
 	<!-- CSS here -->
-
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/slicknav.css">
     <link rel="stylesheet" href="assets/css/flaticon.css"> 
@@ -22,12 +27,6 @@
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-<script>
-  if (window.location.pathname.endsWith(".html")) {
-    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
-    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
-  }
-</script>
 </head>
 <body>
     <!-- ? Preloader Start -->
@@ -82,13 +81,12 @@
 			<div class="slider-full-active owl-carousel custom-dots" >
 				<div class="slide-full slider-height d-flex align-items-center" style="background-image: url(assets/img/black.png);">
 					<div class="container" >
-                        
 						<div class="row">
                             <video playsinline loop muted autoplay preload="auto" style="width: 100%;height: 100%; position: absolute;top:0;left:0;z-index: 5;object-fit: cover;    opacity: 0.3;"><source src="assets/videos/showbaner-small2.mp4" type="video/mp4"></video>
 							<div class="col-xl-6 col-lg-8 col-md-7 col-sm-8" style="position: relative; z-index: 20;">
 								<div class="slide-full-content">
-                                    <span style="font-size: 60px; padding-bottom: 0%;">Nathalia Andrade</span>
-									<h1 style="font-weight: 300; font-size: 50px;">Games Programmer <br> Software Engineer</h1>
+                                    <span id="bannerSpan">Nathalia Andrade</span>
+									<h1 id="bannerh1">Games Programmer <br> Software Engineer</h1>
 									<!--<p>Junior Programmer at Motorsport Games</p>-->
 									<a class="btn" href="project.html" style="padding: 15px 37px 15px 97px; margin-top: 45px;"><h2 style="color:white; margin: 0;">Projects</h1></a>
 								</div>
@@ -124,9 +122,6 @@
                             <div class="about-font-img"">
                                 <img src="assets/img/aboutPhoto.jpg" alt="" style="max-width:300px;">
                             </div>
-                            <!-- <div class="about-back-img ">
-                                <img src="assets/img/gallery/back.jpg" alt="" style="max-width:300px;">
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -144,7 +139,6 @@
             </div>
                <div class="container" style="margin-bottom: 130px;">
                 <div class="row" style="position: relative; width: 100%; overflow: hidden; padding-top: 56.25%; margin-left: auto;margin-right: auto;">
-
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/H27Qt_8fcfY?si=_f4uXOGmByxYcCaK" 
                     title="YouTube video player" 
                     frameborder="0" 
@@ -159,12 +153,9 @@
                     height: 100%;
                     border: none;"></iframe>
                </div>
-
-                
             </div>
                 </div>
             </div>
-            
             <!--All startups End -->
         <!--? Services Area Start -->
         <section class="service-area pt-100 pb-150">
@@ -175,12 +166,9 @@
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-90">
                             <span>Technology</span>
-                            <!--<h2>We provide best intorior solution for you</h2>-->
                         </div>
                     </div>
                 </div>
-
-                
                 <!-- Section caption -->
                 <div class="row justify-content-center">
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
@@ -199,7 +187,6 @@
                                     <div class="col-6 col-md-4"><span title="SDL"><img src="assets/img/icon/sdlImage.png" style="max-width: 50px;"></span></div>
                                     <div class="col-6 col-md-4"><span title="DirextX"><img src="assets/img/icon/directX.png" style="max-width: 50px;"></span></div>
                                   </div>
-                                <!-- <p>Engines for game development Unity and Unreal. Also coded my own engine using SDL2 and OpenGL APIs.</p> -->
                             </div>
                         </div>
                     </div>
@@ -215,7 +202,6 @@
                                     <div class="col-6 col-md-4"><span title="C#"><img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png"/></span></div>
                                     <div class="col-6 col-md-4"><span title="Lua"><img src="assets/img/icon/3500035511551941187-128.png" style="max-height: 48px;"/></span></div>
                                 </div>
-                                  
                                 <div class="row" id="iconRow">
                                     <div class="col-6 col-md-4"><span title="Python"><img src="https://img.icons8.com/color/48/000000/python.png"/></span></div>
                                     <div class="col-6 col-md-4"><span title="Java"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/></span></div>
@@ -226,7 +212,6 @@
                                     <div class="col-6 col-md-4"><span title="CSS"><img src="https://img.icons8.com/color/48/000000/css3.png"/></span></div>
                                     <div class="col-6 col-md-4"><span title="PHP"><img src="https://img.icons8.com/offices/48/000000/php-logo.png"/></span></div>
                                 </div>
-                                <!-- <p>Programming Languages such as C++, C#, Python, Java, HTML, CSS, SQL, PHP.</p> -->
                             </div>
                         </div>
                     </div> 
@@ -252,41 +237,31 @@
                                     <div class="col-6 col-md-4"><span title="Android"><img width="48" height="48" src="https://img.icons8.com/color/48/android-os.png" alt="android-os"/></span></div>
                                     <div class="col-6 col-md-4"><span title="IOS"><img width="50" height="50" src="https://img.icons8.com/ios/50/ios-logo.png" alt="ios-logo"/></span></div>
                                   </div>
-                                <!-- <p>Visual Studio, XCode, Git, Linux, Windows, Raspian, Illustrator, InDesign.</p> -->
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="buttonProjects" style="text-align: center; margin-top:80px;">
                     <a href="project.html" class="btn">projects</a>
                 </div>
 
             </div>
         </section>
-
-        
-      
     </main>
     <footer>
         <!-- Footer Start-->
         <div class="footer-area footer-padding section-bg" data-background="assets/img/gallery/footer_bg.jpg">
             <div class="container">
-                
                 <div class="footer-bottom">
                     <div class="row"    style=" justify-content: center;">
-                        
                             <div class="footer-copy-right f-right">
                                 <!-- social -->
                                 <div class="footer-social">
                                     <a href="https://github.com/nathaliandrad" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-
                                     <a href="https://www.linkedin.com/in/nathaliandrad/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-                                    <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                                     <a href="mailto:nathaliandrad@gmail.com"><i class="fas fa-envelope-square"></i></a>
                                 </div>
                             </div>
-                        <!--</div>-->
                     </div>
                     <div class="row" style="justify-content: center;">
                         <div class="col-xl-7 col-lg-8 col-md-7" style="    text-align: center; margin-top: 30px;">
@@ -297,7 +272,6 @@
   <p style= "font-size: 12px !important;">Icons from <a href="https://icons8.com/icon/" style="color:#888888">Icons8</a></p>                   
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -310,7 +284,6 @@
     </div>
 
     <!-- JS here -->
-
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->
     <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
@@ -344,7 +317,6 @@
         #iconRow{
             padding: 5px;
         }
-
         #techTile{
         font-size: 20px;
         font-weight: 600;
@@ -354,25 +326,36 @@
         text-transform: uppercase;
         color: #15181d;
         }
-
         #navigation{
             text-align: end;
         }
-
         #navText:hover{
             color:#4025D1;
             /* font-size: 17px; */
         }
-
+	#bannerSpan{
+            font-size: 60px; 
+            padding-bottom: 0%;
+        }
+        #bannerh1{
+            font-weight: 300; 
+            font-size: 50px;
+        }
         @media (min-width: 400px) and (max-width: 700px){
             #aboutSection{
                 text-align: center;
             }
-
             #aboutSectionh2{
                 text-align: center;
             }
+            #bannerSpan{
+                font-size: 30px; 
+                padding-bottom: 0%;
+            }
+            #bannerh1{
+                font-weight: 300; 
+                font-size: 25px;
+            }
         }
-
     </style>
 </html>
