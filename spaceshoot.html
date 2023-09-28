@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+<script>
+  if (window.location.pathname.endsWith(".html")) {
+    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+  }
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia | SpaceShoot </title>
@@ -48,18 +54,15 @@
                             </div>
                         </div>
                         <div class="col-xl-9 col-lg-10">
-							<div class="main-menu black-menu menu-bg-white d-none d-lg-block">
-                                <ul id="navigation">
-                                    <li><a href="index.html" id="navText">Home</a></li>
-                                    <li><a href="about.html" id="navText">About</a></li>
-                                    <!-- <li><a href="services.html">Services</a></li> -->
-                                    <li><a href="project.html" id="navText">Projects</a></li>
-                              
-                                    <li><a href="contact.html" id="navText">Contact</a></li>
-                                </ul>
-							
-							</div>
-						</div>
+				<div class="main-menu black-menu menu-bg-white d-none d-lg-block">
+					<ul id="navigation">
+					    <li><a href="home.html" id="navText">Home</a></li>
+					    <li><a href="about.html" id="navText">About</a></li>
+					    <li><a href="project.html" id="navText">Projects</a></li>
+					    <li><a href="contact.html" id="navText">Contact</a></li>
+					</ul>
+				</div>
+			</div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
@@ -72,9 +75,6 @@
     </header>
     <!-- header end -->
     <main>
-
-
-
 <!--? slider-area start -->
 <div class="slider-area">
     <div class="slider-full-active owl-carousel custom-dots">
@@ -82,13 +82,10 @@
             <div class="container">
                 <div class="row">
                     <video playsinline loop muted autoplay preload="auto" style="width: 100%;height: 100%; position: absolute;top:0;left:0;z-index: 5;object-fit: cover;    opacity: 0.3;"><source src="assets/videos/SpaceShoot_Banner_Video.mp4" type="video/mp4"></video>
-                
                     <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8"  style="position: relative; z-index: 20;">
                         <div class="slide-full-content">
                             <span>2D Platformer Short Game</span>
                             <h1>SpaceShoot</h1>
-                           
-                           
                         </div>
                     </div>
                 </div>
@@ -103,8 +100,6 @@
                         <div class="slide-full-content">
                             <span>2D Platformer</span>
                             <h1>SpaceShoot</h1>
-                           
-                           
                         </div>
                     </div>
                 </div>
@@ -115,19 +110,16 @@
 </div>
 <!-- slider-area end -->
         <!-- Hero End -->
-        
         <!--? Team Start -->
         <div class="team-area section-padding30" style="padding-top:60px;">
             <div class="container" >
                 <div class="row" >
-
                     <!-- single Tem -->
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
                                 <img src="assets/img/projects/space_shoot/explosion_space.png" alt="">
                             </div>
-                         
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
@@ -135,7 +127,6 @@
                             <div class="team-img">
                                 <img src="assets/img/projects/space_shoot/life.png" alt="">
                             </div>
-                       
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
@@ -146,16 +137,11 @@
                        
                         </div>
                     </div> 
-                
-
-
                 </div>
-
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">Project Specification</span>
-                            <!--<h2>We provide best intorior solution for you</h2>-->
                         </div>
                     </div>
                 </div>
@@ -166,20 +152,12 @@
                         <h2><b id="boldText">Project Brief:</b> Tasked with crafting a concise yet engaging 2D game utilizing the Unity Engine</h2>
                         <h2><b id="boldText">Role:</b> Unity Developer</h2>
                         <h2><b id="boldText">Platform:</b> PC, Mac and Web</h2><br>
-
-                        
-
-
                     </div>
-                  
-               
-                </div>   
-
+                </div>
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">My Contributions </span>
-                            <!--<h2>PROBLEMS ENCOUNTERED</h2>-->
                         </div>
                     </div>
                 </div>
@@ -191,19 +169,15 @@
                         <h2>• Employed a retro-futuristic visual style</h2>
                         <h2>• Developed streamlined scripts for character actions, including jumping, running, and shooting</h2><br>
                     </div>
-                  
-               
                 </div> 
 
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">Gameplay Video</span>
-                            <!--<h2>We provide best intorior solution for you</h2>-->
                         </div>
                     </div>
                 </div>
-
                 <div class="row" style="position: relative; width: 100%; overflow: hidden; padding-top: 56.25%; margin-left: auto;margin-right: auto;">
                     <iframe class="responsive-iframe" src="https://www.youtube.com/embed/bJ8OsN6m47Y" allow="fullscreen" style="  position: absolute;
                     top: 0;
@@ -213,27 +187,20 @@
                     width: 100%;
                     height: 100%;
                     border: none;"></iframe>
-                    
                 </div>
-
                     <!-- SOURCE CODE SECTION-->
                     <div class="row d-flex justify-content-center" style="margin-top: 80px;">
                         <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                             <div class="section-tittle section-tittle3  text-center mb-10">
                                 <span id = "MySectionTitle"style="color:black">Source Code</span>
-                                <!--<h2>PROBLEMS ENCOUNTERED</h2>-->
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="specifications">
-                            
                             <a href="https://github.com/nathaliandrad/Space_Shoot" target="_blank" rel="noopener noreferrer"><h1><b id="sourceCodeText">SpaceShoot | GitHub</b></h1>
-                                
                             </a>
-    
                         </div>
-    
                     </div> 
             </div>
         
@@ -328,17 +295,13 @@
         #navigation{
             text-align: end;
         }
-
         #navText:hover{
             color:#4025D1;
             /* font-size: 17px; */
         }
-
-
         #backProjects:hover{
             color:#4025D1;
         }
-
         #MySectionTitle{
             font-size: 25px;
         }
