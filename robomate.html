@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+<script>
+  if (window.location.pathname.endsWith(".html")) {
+    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+  }
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia | Robomate </title>
@@ -47,9 +53,8 @@
                         <div class="col-xl-9 col-lg-10">
 							<div class="main-menu black-menu menu-bg-white d-none d-lg-block">
                                 <ul id="navigation">
-                                    <li><a href="index.html" id="navText">Home</a></li>
+                                    <li><a href="home.html" id="navText">Home</a></li>
                                     <li><a href="about.html" id="navText">About</a></li>
-                                    <!-- <li><a href="services.html">Services</a></li> -->
                                     <li><a href="project.html" id="navText">Projects</a></li>
                             
                                     <li><a href="contact.html" id="navText">Contact</a></li>
@@ -79,11 +84,6 @@
             <div class="container">
                 <div class="row">
                     <video playsinline loop muted autoplay style="width: 100%;height: 100%; position: absolute;top:0;left:0;z-index: 5;object-fit: cover;    opacity: 0.3;"><source src="assets/videos/Robomate.mp4" type="video/mp4"></video>
-                    <!-- <div class="col-xl-12">
-                        <div class="hero-cap hero-cap2 pt-70 text-center">
-                            <h2>Colorgize VR</h2>
-                        </div>
-                    </div> -->
                     <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8"  style="position: relative; z-index: 20;">
                         <div class="slide-full-content">
                             <span>Raspberry Pi Personal Assistant Robot | Prototype</span>
@@ -133,16 +133,12 @@
                          
                         </div>
                     </div> 
-                
-
-
                 </div>
 
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">Project Specification</span>
-                            <!--<h2>We provide best intorior solution for you</h2>-->
                         </div>
                     </div>
                 </div>
@@ -155,21 +151,13 @@
                         <h2><b id="boldText">Project Brief: </b>Develop a cost-effective and user-friendly personal assistant robot</h2>
                         <h2><b id="boldText">Role:</b> Programmer</h2>
                         <h2><b id="boldText">Team Size:</b> 2 Students</h2><br>
-                        
-
-                        <!-- <h2>Created unique animations for each object in the room.</h2> -->
-
-
                     </div>
-                  
-               
                 </div>   
 
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">My Contributions</span>
-                            <!--<h2>PROBLEMS ENCOUNTERED</h2>-->
                         </div>
                     </div>
                 </div>
