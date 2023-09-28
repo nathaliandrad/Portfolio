@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+<script>
+  if (window.location.pathname.endsWith(".html")) {
+    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+  }
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia | Running Ball </title>
@@ -49,14 +55,13 @@
                         <div class="col-xl-9 col-lg-10">
 							<div class="main-menu black-menu menu-bg-white d-none d-lg-block">
                                 <ul id="navigation">
-                                    <li><a href="index.html" id="navText">Home</a></li>
+                                    <li><a href="home.html" id="navText">Home</a></li>
                                     <li><a href="about.html" id="navText">About</a></li>
                                     <!-- <li><a href="services.html">Services</a></li> -->
                                     <li><a href="project.html" id="navText">Projects</a></li>
                                 
                                     <li><a href="contact.html" id="navText">Contact</a></li>
                                 </ul>
-							
 							</div>
 						</div>
                         <!-- Mobile Menu -->
@@ -84,13 +89,10 @@
   background-size: cover;">
             <div class="container">
                 <div class="row">
-               
                     <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8"  style="position: relative; z-index: 20;">
                         <div class="slide-full-content">
                             <span>Endless Runner Mobile Game</span>
                             <h1>Running Ball</h1>
-                           
-                           
                         </div>
                     </div>
                 </div>
@@ -100,10 +102,7 @@
     </div>
 </div>
 <!-- slider-area end -->
-
-
         <!-- Hero End -->
-        
         <!--? Team Start -->
         <div class="team-area section-padding30" style="padding-top:60px;">
             <div class="container" >
@@ -134,11 +133,7 @@
                           
                         </div>
                     </div> 
-                
-
-
                 </div>
-
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
@@ -154,21 +149,13 @@
                         <h2><b id="boldText">Project Brief:</b> Spearheaded the development of an engaging mobile game tailored for casual gameplay</h2>
                         <h2><b id="boldText">Role:</b> Unity Developer</h2>
                         <h2><b id="boldText">Platform:</b> Android</h2><br>
-                        
-
-                        <!-- <h2>Created unique animations for each object in the room.</h2> -->
-
-
-                    </div>
-                  
-               
+                    </div>   
                 </div>   
 
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">My Contributions</span>
-                            <!--<h2>PROBLEMS ENCOUNTERED</h2>-->
                         </div>
                     </div>
                 </div>
@@ -180,18 +167,13 @@
                         <h2>• Included a carefully chosen music selection to harmonize with the gameplay</h2>
                         <h2>• Crafted a variety of levels, each offering increasing challenges</h2>
                         <h2>• Designed a user-friendly interface with a sci-fi theme for an immersive experience</h2><br>
-
-
                     </div>
-                  
-               
                 </div> 
 
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
                         <div class="section-tittle section-tittle3  text-center mb-10">
                             <span id = "MySectionTitle"style="color:black">Gameplay Video</span>
-                            <!--<h2>We provide best intorior solution for you</h2>-->
                         </div>
                     </div>
                 </div>
@@ -205,7 +187,6 @@
                     width: 100%;
                     height: 100%;
                     border: none;"></iframe>
-                    
                 </div>
 
                   <!-- SOURCE CODE SECTION-->
