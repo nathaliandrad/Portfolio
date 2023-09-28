@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+<script>
+  if (window.location.pathname.endsWith(".html")) {
+    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+  }
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia | Galaxy Mates </title>
@@ -49,14 +55,13 @@
                         <div class="col-xl-9 col-lg-10">
 							<div class="main-menu black-menu menu-bg-white d-none d-lg-block">
                                 <ul id="navigation">
-                                    <li><a href="index.html" id="navText">Home</a></li>
+                                    <li><a href="home.html" id="navText">Home</a></li>
                                     <li><a href="about.html" id="navText">About</a></li>
                                     <!-- <li><a href="services.html">Services</a></li> -->
                                     <li><a href="project.html" id="navText">Projects</a></li>
                      
                                     <li><a href="contact.html" id="navText">Contact</a></li>
                                 </ul>
-						
 							</div>
 						</div>
                         <!-- Mobile Menu -->
@@ -71,9 +76,6 @@
     </header>
     <!-- header end -->
     <main>
-       
-
-
 <!--? slider-area start -->
 <div class="slider-area">
     <div class="slider-full-active owl-carousel custom-dots">
@@ -85,12 +87,10 @@
   background-size: cover;">
             <div class="container">
                 <div class="row">
-         
                     <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8">
                         <div class="slide-full-content">
                             <span>Augemented Reality Kids Game</span>
                             <h1>Galaxy Mates</h1>
-                           
                         </div>
                     </div>
                 </div>
@@ -100,15 +100,11 @@
     </div>
 </div>
 <!-- slider-area end -->
-
-
         <!-- Hero End -->
-        
         <!--? Team Start -->
         <div class="team-area section-padding30" style="padding-top:60px;">
             <div class="container" >
                 <div class="row" >
-
                     <!-- single Tem -->
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
@@ -134,9 +130,6 @@
                  
                         </div>
                     </div> 
-                
-
-
                 </div>
 
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
@@ -156,12 +149,7 @@
                         <h2><b id="boldText">Team Size:</b> 2 Students</h2>
                         <h2><b id="boldText">Role:</b> Unity Developer</h2>
                         <h2><b id="boldText">Platform:</b> IOS and Android</h2><br>
-                        
-
-
                     </div>
-                  
-               
                 </div>   
 
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
@@ -173,19 +161,11 @@
                 </div>
                 <div class="row">
                     <div class="specifications">
-                        <!--
-Developed a straightforward C# application within Unity, extracting images from the database and utilizing Vuforia for answer validation.
-Crafted easily scannable images of planets to enhance user experience.
-Collaborated with designers to compile assets for the creation of a captivating game character responsible for narrating the gameplay.
-Diligently sourced high-quality images to facilitate quick and accurate scanning.
-                        -->
                         <h2>• Developed a straightforward C# application within Unity, extracting images from the database and utilizing Vuforia for answer validation</h2>
                         <h2>• Crafted easily scannable images of planets to enhance user experience</h2>
                         <h2>• Collaborated with designers to compile assets for the creation of a captivating game character responsible for narrating the gameplay</h2>
                         <h2>• Diligently sourced high-quality images to facilitate quick and accurate scanning</h2><br><br>
                     </div>
-                   
-               
                 </div> 
 
                 <div class="row d-flex justify-content-center" style="margin-top: 40px;">
@@ -222,13 +202,8 @@ Diligently sourced high-quality images to facilitate quick and accurate scanning
                 </div>
                 <div class="row">
                     <div class="specifications">
-                        
                         <a href="https://github.com/nathaliandrad/Galaxy_Mates" target="_blank" rel="noopener noreferrer"><h1><b  id="sourceCodeText">Galaxy Mates | GitHub</b></h1>
-                            
                         </a>
-                     
-
-
                     </div>
                
                 </div> 
@@ -238,8 +213,6 @@ Diligently sourced high-quality images to facilitate quick and accurate scanning
             <a href="project.html"><h3 id="backProjects" style="text-align: center; margin-bottom: 10px;font-size: 1.5em;"> ↵ Back to Projects</h3></a>
         
         </div>
-
-       
         <!-- Team End -->
     </main>
     <footer>
