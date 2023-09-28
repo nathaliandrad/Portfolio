@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+<script>
+  if (window.location.pathname.endsWith(".html")) {
+    var newUrl = window.location.pathname.slice(0, -5); // Remove ".html" from the URL
+    window.history.replaceState({}, document.title, newUrl); // Update the URL without reloading the page
+  }
+</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Nathalia | ColorgizeVR </title>
